@@ -59,7 +59,8 @@ console.log(John.tips, John.amoutToBePaid);
 
 var dog = {
     name : 'good boy',
-    sex : 'unisex'
+    sex : 'unisex',
+    nickName: 'Jack'
 }
 
 dog.age = 12
