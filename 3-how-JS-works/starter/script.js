@@ -1,10 +1,16 @@
 ///////////////////////////////////////
 // Lecture: Hoisting
 
+var age = 10;
 
+function foo(){
+    console.log(age);
+    var age = 100;
+     console.log(age);
+}
 
-
-
+foo();
+console.log(age);
 
 
 
