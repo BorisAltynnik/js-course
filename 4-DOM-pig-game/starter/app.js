@@ -13,7 +13,7 @@ var scores, roundScores, activePlayer, dice;
 
 scores = [0,0];
 roundScore = 0;
-activePlayer = 0; // 0 - first player, 1 - secind player
+activePlayer = 0; // 0 - first player, 1 - second player
 
 dice = Math.floor(Math.random()*6 + 1); //Math.random
 console.log(dice);
@@ -21,4 +21,6 @@ console.log(dice);
 document.querySelector('#current-'+activePlayer).textContent = dice; 
 
 //magic comment
+//second magic comment
+//third magic comment
 
