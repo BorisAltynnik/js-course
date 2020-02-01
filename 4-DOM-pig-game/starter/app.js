@@ -12,12 +12,8 @@ GAME RULES:
 var scores, roundScores, activePlayer, gamePlaying, previousDice;
 
 init();
-
-
-
-previousDice = 0;
-
-
+//hahahaahha
+//ahahahha
 document.querySelector('.btn-roll').addEventListener('click',function() {
     
     if (gamePlaying){
@@ -92,6 +88,8 @@ document.querySelector('.btn-new').addEventListener('click', init);
 
 function init(){
     gamePlaying = true;
+    
+    previousDice = 0;
     
     scores = [0,0];
     roundScore = 0;
