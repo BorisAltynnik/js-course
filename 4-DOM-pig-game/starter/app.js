@@ -59,7 +59,7 @@ document.querySelector('.btn-roll').addEventListener('click',function() {
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
     
-    console.log(winningScore);
+    //console.log(winningScore);
     
     if (gamePlaying){
         // Add CURRENT score to CLOBAL score
@@ -67,6 +67,16 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         //update the UI
         document.querySelector('#score-'+ activePlayer).textContent = scores[activePlayer];
         //Check if player won the game
+        var input = document.querySelector('.final-score').value;
+        
+        if(input){
+            winningScore = input;
+        }
+        else{
+            winningScore = 100;
+        }
+        
+       // console.log(input);
         if (scores[activePlayer] >= winningScore){
 
             gamePlaying = false;
@@ -102,7 +112,7 @@ document.querySelector('.btn-new').addEventListener('click', init);
 
 function init(){
     
-    winningScore = prompt("Enter winning score");
+    //winningScore = prompt("Enter winning score");
     gamePlaying = true;
     
     
